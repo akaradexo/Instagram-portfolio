@@ -371,6 +371,7 @@ nav .branding {
     width: 43rem;
     height: auto;
     border-radius: 10px;
+    margin:1rem ;
 }
 @media(max-width : 1260px){
   .read{
@@ -396,6 +397,18 @@ nav .branding {
 }
 .banner img{
   width: 22rem;
+}
+.social{
+  width: 90%;
+  margin: 1rem auto 0;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 20px 20px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 
