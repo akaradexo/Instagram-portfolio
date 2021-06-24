@@ -7,9 +7,10 @@
     column-width: 33%;
     padding: 3rem 1rem;
     width: 90%;
-    margin: 5rem auto 0rem;
+    margin: 1rem auto 0rem;
     border-radius: 20px 20px 0 0;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .gallery h2{
     font-style: italic;
@@ -21,6 +22,7 @@
     -webkit-transition: all 350ms ease;
     cursor: pointer;
     margin-bottom: 1rem;
+    
 }
 .gallery .pics  :hover{
     filter:opacity(.9);

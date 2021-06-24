@@ -3,10 +3,12 @@ import '../App.css';
 const Header = () => {
     return (
         <header>
-        <div class="container">
-            <div class="name">
-                <h1>Ashutosh</h1>
-            <h3>CONTENT CREATOR | INSTAGRAM INFLUENCER</h3>
+            <div className='header'>
+                <div className="container">
+                    <div className="name">
+                    <h1>Ashutosh</h1>
+                    <h3>CONTENT CREATOR | INSTAGRAM INFLUENCER</h3>
+                </div>
             </div>
         </div>
     </header>

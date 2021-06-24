@@ -202,9 +202,13 @@ li {
   
 /* navbar */
 nav{
-    background-color: transparent;
+ background-color: transparent;
+  
+  
+    border-radius: 0 0 2rem 2rem ;
+
     padding: 1rem;
-    position: fixed; /* Set the navbar to fixed position */
+    /* position: fixed; Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
     z-index: 101;
@@ -214,6 +218,7 @@ nav a{
     color: black;
     text-transform: uppercase;
     font-size: larger;
+    
 }
 
 nav ul{
@@ -238,17 +243,41 @@ nav .branding {
     font-weight: 900;
     letter-spacing: 1rem;
   }
-
-header{
+  @media(max-width : 950px){
+    
+    nav ul{
+      float: left;
+      margin-top: 0.6rem;
+  }
+  nav li{
+    float: left;
+    display: inline;
+    padding-left: 1rem;
+}
+  .container {
     width: 90%;
-    margin: 0 auto;
-     margin-top: 5rem;
-  min-height: 51.5rem;
+    margin: auto;
+    overflow: hidden;
+  }
+  }
+  @media(max-width : 569px){
+    nav li{
+     
+      display: flex;
+      
+  }
+   
+  }
+.header{
+    width: 90%;
+    margin: 1rem auto 0;
+    min-height: 51.5rem;
     background-image: url(../src/components/images/ashyou.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     border-radius: 20px 20px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .name{
@@ -273,37 +302,36 @@ header{
     font-size: 1.5rem;
     font-weight: 500;
 }   
+@media(max-width : 1160px){
+  .name h1{
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    
+}
+}
+@media(max-width : 662px){
+  .name h1{
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 0.5rem;
+    
+}
+}
+
 
 /* .hightlight */
-.hightlight{
-    width: 90%;
-    margin: 5rem auto 2rem;
-    border-radius: 20px 20px 0 0;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.hightlight h2{
-  font-style: italic;
-  padding: 2rem;
-}
-.box{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    justify-items: center;
-    grid-gap: 10px;
-}
+
+
 .card{
       margin: .5rem 0 1rem 0;
       background-color: transparent;
-      border-radius: 10px;
+      border-radius: 1rem;
       color: #fff;
       
   }
   .card-image img{
-    border-radius: 2rem;
+    border-radius: 1rem;
   }
 
 
@@ -311,7 +339,7 @@ header{
 
 .about{
     width: 90%;
-    margin: 5rem auto 0;
+    margin: 1rem auto 0;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -319,6 +347,7 @@ header{
     justify-content: center;
     padding: 1.5rem;
     border-radius: 20px 20px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
 .read{
@@ -343,5 +372,33 @@ header{
     height: auto;
     border-radius: 10px;
 }
+@media(max-width : 1260px){
+  .read{
+    padding: 0 5rem;
+}
 
+  .banner img{
+    width: 30rem;
+}
+}
+@media(max-width : 950px){
+  .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem;
+    border-radius: 20px 20px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.read{
+  padding: 0 3rem;
+}
+.banner img{
+  width: 22rem;
+}
+
+
+ 
+}
 /*  */
