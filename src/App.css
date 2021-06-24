@@ -34,7 +34,7 @@ a:focus {
 }
 a:active,
 a:hover {
-  outline: 0;
+  outline: none;
 }
 h1 {
   font-size: 2em;
@@ -177,7 +177,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #d9d9d9;
     background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
-  min-height: 90vh;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -191,8 +191,14 @@ body {
 a {
     text-decoration: none;
     font-size: 1rem;
+    outline: none;
+  
   }
-
+  a:active, a:focus {
+    
+    outline: 0;
+    border: none;
+  }
   
 li {
     list-style: none;
@@ -218,7 +224,8 @@ nav a{
     color: black;
     text-transform: uppercase;
     font-size: larger;
-    
+    outline: none;
+    text-decoration: none;
 }
 
 nav ul{
@@ -229,15 +236,27 @@ nav ul{
 nav li{
     float: left;
     display: inline;
-    padding-left: 2rem;
+    padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 20rem;
+}
+nav li:active, :focus {
+color: #7db4be;
+}
+nav li:hover{
+  background-color: white;
 }
 
 nav .branding {
     float: left;
+    transition: transform .2s;
   
 }
-  
-  nav .branding a h2{
+nav .branding:hover{
+  transform: scale(0.9);
+}
+  nav .branding h2{
     margin: 0;
     font-size: 1.5rem;
     font-weight: 900;
@@ -271,7 +290,7 @@ nav .branding {
 .header{
     width: 90%;
     margin: 1rem auto 0;
-    min-height: 51.5rem;
+    min-height: 51rem;
     background-image: url(../src/components/images/ashyou.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -398,6 +417,10 @@ nav .branding {
 .banner img{
   width: 22rem;
 }
+}
+
+
+
 .social{
   width: 90%;
   margin: 1rem auto 0;
@@ -411,7 +434,61 @@ nav .branding {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 
-
+.social .card2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
  
+}
+.social .card2 a{
+  color: #000;
+  font-size: 8rem;
+  padding: 0.2rem;
+  transition: transform .2s;
+}
+.social .card2 a :hover{
+  filter:opacity(.8);
+}
+.social .card2 img{
+  height: auto;
+  width:20rem;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 0.5rem;
+  margin: 0.3rem;
+  transition: transform .2s;
+}
+.social .card2 img:hover{
+  transform: scale(0.99);
+  
+}
+@media(max-width : 1360px){
+  .social{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+  
+  }
+}
+@media(max-width : 1160px){
+  .social{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+  
+  }
+}
+@media(max-width : 676px){
+  .social{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    grid-gap: 20px;
+  
+  }
 }
 /*  */
