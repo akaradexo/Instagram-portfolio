@@ -242,7 +242,6 @@ nav li{
     border-radius: 20rem;
 }
 nav li:active, :focus {
-color: #7db4be;
 }
 nav li:hover{
   background-color: white;
@@ -492,3 +491,85 @@ nav .branding:hover{
   }
 }
 /*  */
+.follow{
+  width: 90%;
+  margin: 1rem auto 0;
+  background-color: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  padding-bottom: 8rem;
+  background-image: url(../src/components/images/foolow.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+.follow h1{
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 5rem;
+}   
+.message{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.thing{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-self: flex-start;
+  padding-right: 5rem;
+}
+.thing h2{
+  font-size: 2.3rem;
+  padding-bottom: 4rem;
+}
+.thing h3{
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.thing p{
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+}
+.thing p a{
+  background-color: white;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  color: black;
+
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5rem;
+
+}
+input{
+  width: 200%;
+  padding: 0.8rem 1rem;
+  margin: 0.2rem;
+  border-radius: 8px;
+  background-color: white;
+  border: 0.1111rem solid white;
+  color: black;
+  font-weight: 800;
+}
+button{
+  padding: 0.3rem 2rem;
+  border-radius: 10px;
+  border: none;
+  margin: 2rem;
+  background-color: white;
+  color: #000;
+  
+}
