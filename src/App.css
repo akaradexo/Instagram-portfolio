@@ -236,13 +236,13 @@ nav ul{
 nav li{
     float: left;
     display: inline;
-    padding: 0 2rem;
+    margin: 0 0.5rem;
+    padding: 0 1.5rem;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 20rem;
 }
-nav li:active, :focus {
-}
+
 nav li:hover{
   background-color: white;
 }
@@ -375,13 +375,13 @@ nav .branding:hover{
 .read h1{
     text-transform: uppercase;
     font-size: 4rem;
-    font-weight: 600;
     padding: 0 1rem 0  0;
 }
 
 .read p{
     font-size: 1rem;
     font-weight: 100;
+    
 }
 
 
@@ -390,6 +390,7 @@ nav .branding:hover{
     height: auto;
     border-radius: 10px;
     margin:1rem ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 @media(max-width : 1260px){
   .read{
@@ -505,7 +506,9 @@ nav .branding:hover{
   padding-bottom: 8rem;
   background-image: url(../src/components/images/foolow.jpg);
   background-repeat: no-repeat;
-    background-size: cover;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
 }
 .follow h1{
   font-size: 4rem;
@@ -546,7 +549,7 @@ nav .branding:hover{
   color: black;
 
 }
-.form{
+form{
   display: flex;
   flex-direction: column;
   align-items: center;
